@@ -1,0 +1,885 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+      font-size: 62.5%;
+      text-decoration: none;
+  }
+  body{
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.7;
+      color: #fff;
+      background:  #f4f4f4;;
+  }
+
+  a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+
+
+/* ############### utility classes ############# */
+
+
+  .container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    font-size: 1.1rem;
+    
+}
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+    color: #e36;
+    font-size: 1.8rem;
+}
+
+.btn-secondary{
+    border-radius: 1.5em;
+    background: #e63946;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+.md-heading{
+    font-weight: 700;
+    font-size: 3.0rem;
+}
+
+
+/* ############### header styling ################## */
+  .header{
+    position: relative;
+   /* height: 120vh; */
+   /* background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('../img/header.jpg') ; */
+   background-position: center ;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+.navbar{
+    padding: 1rem;
+}
+.header .logo,
+.header .navbar a{
+    color: white;
+}
+ .logo{
+    float: left;
+    font-size: 3.0rem;
+}
+ .navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar a{
+    margin-bottom: 0.3rem;
+}
+.navbar::after{
+content: "";
+display: block;
+clear: both;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+
+/* ################### header content ############## */
+
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgb(0,0,0,.2) rgb(0,0,0,.2));
+    
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.0rem;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+/* ################### about ########################### */
+.about-us{
+    margin-top: 15rem;
+    text-align: center;
+    width: 600px;
+    margin-left: 25%;
+    color: rgba(3, 3, 3, 0.877);
+    margin-bottom: 15rem;
+}
+
+.about-us p{
+    font-size: 1.4rem;
+    color: rgb(113, 112, 112);
+}
+.small{
+    font-weight: 700;
+}
+
+
+/* ################### pesudo classes ############### */
+
+.btn-primary:hover{
+    background: rgb(247, 234, 238);
+}
+
+.btn-secondary:hover{
+    background-color:rgb(38, 37, 37);
+}
+
+/* ################ product srvc ############# */
+
+.products-srvc{
+    position: relative;
+    height: 120vh;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('../img/product-srvc.jpg') ;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    
+    
+}
+.our-products{
+    order: 1;
+    width: 30%;
+    padding-left: 2rem;
+    color: rgb(226, 226, 226) ;
+    padding: 3rem;
+}
+.our-products h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(249, 249, 249);
+}
+.our-products p{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+.caption{
+    order: 2;
+    width: 60%;
+    align-self: center;
+}
+.caption h2{
+    color:rgb(249, 245, 245) ;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.h4 h4{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.h4 p{
+    border-bottom: 1px solid rgb(226, 226, 226);
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+/* ##################### contribution ##################3 */
+.sec{
+    margin-top: 10rem;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.sec p{
+     font-size: 1.8rem;
+     font-weight: 700;
+     color:rgb(38, 37, 37);;
+     margin-bottom: 2rem;
+}
+.sec h2{
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: rgb(38, 37, 37);;
+}
+.contribution{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.contribution h2,
+.contribution p{
+    justify-content: flex-end;
+    color: rgb(38, 37, 37););
+}
+.contribution h2{
+    margin-bottom: 1rem;
+}
+.contribution p{
+    font-size: 1.2rem;
+}
+.box{
+    margin-top: 15px;
+height: 500px;
+width: 30%;
+
+padding: 5px 0px 15px;
+}
+.box-img{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bottom{
+    height: 80px;
+    display: flex;
+  margin-top: 10rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+}
+.bottom h2{
+    width: 70%;
+    color: rgb(38, 37, 37);;
+    font-size: 2.2rem;
+
+}
+.bottom .a{
+text-align: right;
+border-radius: 1.8em;
+background: #e63946;
+color: #fff;
+font-size: 1.2rem;
+
+   
+}
+.a:hover{
+    background: rgb(38, 37, 37);;
+}
+/* ################## footer ############## */
+.panel1{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+}
+
+.panel1 ul{
+    margin-top: 20px;
+    width: 25%;
+    font-size: 1.8rem;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddd;
+    font-size: 1.4rem;
+}
+.cap{
+    width: 25%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 5rem;
+    padding-right: 4rem;
+}
+
+.last{
+    text-align: center;
+    color: #dddd;
+    font-size: 1.8rem;
+}
+
+
+/* ############################################################################################## */
+/* #################### about page ########################################### */
+
+.sec1{
+    height: 400px;
+    display: flex;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    color: #222f3d;
+    justify-content: space-evenly;
+    
+}
+.div1{
+    width: 40%;
+}
+.div1 p{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.div1 h2{
+    font-weight: 700;
+    font-size: 3.0rem;
+}
+.div2 p{
+    color: #4a4b4d;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.div2 h2{
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.div2{
+    width:40%
+   
+}
+
+
+.number{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #222f3d;
+    
+    padding-bottom: 3rem;
+    border-bottom:1px solid #4a4b4d ;
+    margin-bottom: 5rem;
+}
+.number h1{
+    font-size: 2.9rem;
+}
+.number p{
+    font-size: 1.3rem;
+}
+.number h2{
+    font-size: 2.9rem;
+}
+.head{
+    width: 30%;
+}
+
+.p{
+    color: hsl(211, 28%, 19%);
+    padding: 3rem;
+    width: 90%;
+   margin-bottom: 3rem;
+
+}
+.down{
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+    color: #222f3d;
+    
+    padding: 3rem;
+}
+.sol{
+    width: 30%;
+}
+.qual{
+    width: 30%;
+}
+.mix{
+    width:30%;
+}
+.mix h2{
+    font-size: 2.2rem;
+    color:  #222f3d;
+}
+.down p{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    
+}
+
+
+
+/* ################### product page ###################### */
+
+.part{
+    height: 500px;
+    display: flex;
+    margin-top: 8rem;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
+    margin-bottom: 10rem;
+}
+.part p{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: #6e6e6f;
+}
+.part h1{
+    font-size: 2.8rem;
+    color:  #222f3d;;
+}
+.part h5{
+    font-size: 1.3rem;
+    color:  #222f3d;;
+}
+.text{
+    width: 30%;
+}
+.im1{
+    width:30%;
+    background-image: url("../IMG/im1.jpg");
+    background-size: cover;
+
+    background-position: center;
+}
+.im2{
+    width:30%;
+    background-image: url("../IMG/im2.jpg");
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* ############# inov ######### */
+
+.inov{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 3rem;
+}
+.p1{
+    width: 40%;
+}
+.p2{
+    width: 40%;
+}
+.p3{
+    width: 40%;
+}
+.p4{
+    width: 40%;
+}
+.inov h3{
+    border-top: 1px solid #4a4b4d;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #222f3d;
+}
+.inov p{
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+    color: #6e6e6f;
+}
+
+
+/* ####################### projects ############# */
+
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 1500px;
+    margin-top: 10rem;
+    padding: 3rem;
+
+}
+.main-div h2{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #222f3d;
+    margin-bottom: 1rem;
+}
+
+.main-div p{
+    margin-top:1rem;
+    font-size: 1.3rem;
+    color: #6e6e6f;
+    margin-bottom:4rem;
+}
+.d1{
+    width: 45%;
+}
+.d2{
+    width: 45%;
+}
+.d3{
+    width: 45%;
+}
+.d4{
+    width: 45%;
+}
+.imgs{
+    margin-top: 3rem;
+    height: 300px;
+
+}
+.imgs1{
+    background-image: url("../IMG/g1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgs2{
+    background-image: url("../IMG/g2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgs3{
+    background-image: url("../IMG/g3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.imgs4{
+    background-image: url("../IMG/g4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* ################## form ################# */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+    color: #222f3d;
+    padding-top: 8rem;
+
+    margin-bottom: 5rem;
+}
+
+.call{
+    width: 45%;
+    font-size: 1.8rem;
+    padding: 2rem;
+
+}
+.call p{
+    margin-top: 1rem;
+}
+
+.form{
+    width: 45%;
+    font-size: 1.8rem;
+    margin-right: 4rem;
+
+}
+input{
+    width: 100%;
+    padding: 1rem;
+}
+textarea{
+    height: 100px;
+    width: 90%;
+}
+
+
+/* #################### for responsive #################### */
+
+@media (min-width:150px) and (max-width: 550px) {
+    .container{
+        max-width: 500px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header{
+        position: relative;
+       height: 96vh;
+       background-position: center ;
+       background-size: cover;
+       background-repeat: no-repeat;
+    
+    }
+    .logo{
+        float: none;
+        text-align: end;
+        font-size: 2.0rem;
+    }
+    .navbar .nav-items{
+        float: none;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .header-content h1{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.0rem;
+    }
+    .header-content p{
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+    .about-us{
+        margin-top: 15rem;
+        text-align: center;
+        width: 350px;
+        margin-left: 5%;
+        color: rgba(3, 3, 3, 0.877);
+        margin-bottom: 15rem;
+    }
+    .products-srvc{
+        position: relative;
+        height: 95vh;
+        background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('../img/product-srvc.jpg') ;
+        background-position: center ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 4rem;
+        
+        
+    }
+    .our-products{
+        order: 1;
+        width: 100%;
+        padding-left: 2rem;
+        color: rgb(226, 226, 226) ;
+        padding: 3rem;
+    }
+    .caption{
+        order: 2;
+        width: 100%;
+        align-self: center;
+        margin: 0.5em;
+    }
+    .caption h2{
+        color:rgb(249, 245, 245) ;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .box{
+        margin-top: 15px;
+    height: 500px;
+    width: 100%;
+    
+    padding: 5px 0px 15px;
+    }
+    .bottom h2{
+        width: 70%;
+        color: rgb(38, 37, 37);;
+        font-size: 1.9rem;
+    
+    }.panel1{
+        background-color: #222f3d;
+        color: white;
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 3rem;
+    }
+    .cap{
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-top: 5rem;
+        padding-right: 4rem;
+    }
+    
+    .sec1{
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem;
+        margin-bottom: 1rem;
+        margin-top: 10rem;
+        color: #222f3d;
+        justify-content: space-evenly;
+        
+    }
+    .div1{
+        width: 100%;
+    }
+    .div1 h2{
+        font-weight: 700;
+        font-size: 2.0rem;
+    }
+    .div2 h2{
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+    .div2{
+        width:100%
+        
+       
+    }
+    
+.number{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #222f3d;
+    padding-bottom: 3rem;
+    border-bottom:1px solid #4a4b4d ;
+    margin-bottom: 5rem;
+}
+.number h2{
+    font-size: 2.0rem;
+}
+.head{
+    width: 100%;
+    margin-left: 2rem;
+}
+.down{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 600px;
+    color: #222f3d;
+    
+    padding: 3rem;
+}
+.sol{
+    width: 100%;
+}
+.qual{
+    width: 100%;
+}
+.mix{
+    width:100%;
+}
+.mix h2{
+    font-size:2.0rem;
+    color:  #222f3d;
+}
+.part{
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
+    margin-bottom: 10rem;
+}
+.text{
+    width: 100%;
+}
+.im1{
+    height: 50%;
+    width:48%;
+    background-image: url("../IMG/im1.jpg");
+    background-size: cover;
+
+    background-position: center;
+}
+.im2{
+    height: 50%;
+    width:48%;
+    background-image: url("../IMG/im2.jpg");
+    background-size: cover;
+
+    background-position: center;
+}
+
+.p1{
+    width: 100%;
+}
+.p2{
+    width: 100%;
+}
+.p3{
+    width: 100%;
+}
+.p4{
+    width: 100%;
+}
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 3000px;
+    margin-top: 10rem;
+    padding: 3rem;
+
+}
+.d1{
+    width: 100%;
+}
+.d2{
+    width: 100%;
+}
+.d3{
+    width: 100%;
+}
+.d4{
+    width: 100%;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 900px;
+    color: #222f3d;
+    padding-top: 8rem;
+
+    margin-bottom: 5rem;
+}
+
+.call{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 2rem;
+    border-bottom:1px solid #6e6e6f;
+
+}
+.form::before{
+    content: "OR FILL THE FORM";
+    font-weight: 700;
+    font-size: 1.8rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.form{
+    padding-top: 2rem;
+    width: 100%;
+    font-size: 1.8rem;
+    margin-right: 4rem;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
